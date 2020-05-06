@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68ABD07B-BBEB-46F3-B92D-6F88C9456A18}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SistemaAdmGym</RootNamespace>
+    <AssemblyName>SistemaAdmGym</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\bmth_\Desktop\prueba instalador\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B6FB616C3F6919C5C8693DBC56798B142CBD449D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SistemaAdmGym_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logosag.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CxFlatUI-Enhanced, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CxFlatUI-Enhanced.1.0.0.2\lib\net45\CxFlatUI-Enhanced.dll</HintPath>
+    </Reference>
+    <Reference Include="DevLib.ModernUI, Version=2.17.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevLib.ModernUI.2.17.8.0\lib\net20\DevLib.ModernUI.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.12.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.12.1\lib\net45\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VisualPlus, Version=0.4.1.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\VisualPlus.0.4.1.6-beta\lib\NET4\VisualPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuracion\Validar.cs" />
+    <Compile Include="Controlador\ConnectionController.cs" />
+    <Compile Include="Controlador\MembresiaController.cs" />
+    <Compile Include="Controlador\SocioController.cs" />
+    <Compile Include="Controlador\UsuarioController.cs" />
+    <Compile Include="Modelo\DetallePago.cs" />
+    <Compile Include="Modelo\Membresia.cs" />
+    <Compile Include="Modelo\Socio.cs" />
+    <Compile Include="Modelo\Usuario.cs" />
+    <Compile Include="Vista\Acercade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Acercade.Designer.cs">
+      <DependentUpon>Acercade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Configuraciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Configuraciones.Designer.cs">
+      <DependentUpon>Configuraciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Descuentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Descuentos.Designer.cs">
+      <DependentUpon>Descuentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Index.Designer.cs">
+      <DependentUpon>Index.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\MembresiaNueva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\MembresiaNueva.Designer.cs">
+      <DependentUpon>MembresiaNueva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\MembresiasHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\MembresiasHome.Designer.cs">
+      <DependentUpon>MembresiasHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\MensajeExito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\MensajeExito.Designer.cs">
+      <DependentUpon>MensajeExito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\SocioEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\SocioEditar.Designer.cs">
+      <DependentUpon>SocioEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\SocioInformacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\SocioInformacion.Designer.cs">
+      <DependentUpon>SocioInformacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\SociosBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\SociosBuscar.Designer.cs">
+      <DependentUpon>SociosBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\SociosNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\SociosNuevo.Designer.cs">
+      <DependentUpon>SociosNuevo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\SociosHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\SociosHome.Designer.cs">
+      <DependentUpon>SociosHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\UsuarioEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\UsuarioEditar.Designer.cs">
+      <DependentUpon>UsuarioEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\UsuariosHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\UsuariosHome.Designer.cs">
+      <DependentUpon>UsuariosHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\UsuariosNuevo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\UsuariosNuevo.Designer.cs">
+      <DependentUpon>UsuariosNuevo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Vista\Acercade.resx">
+      <DependentUpon>Acercade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Configuraciones.resx">
+      <DependentUpon>Configuraciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Descuentos.resx">
+      <DependentUpon>Descuentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Index.resx">
+      <DependentUpon>Index.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Vista\MembresiaNueva.resx">
+      <DependentUpon>MembresiaNueva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\MembresiasHome.resx">
+      <DependentUpon>MembresiasHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\MensajeExito.resx">
+      <DependentUpon>MensajeExito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\SocioEditar.resx">
+      <DependentUpon>SocioEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\SocioInformacion.resx">
+      <DependentUpon>SocioInformacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\SociosBuscar.resx">
+      <DependentUpon>SociosBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\SociosHome.resx">
+      <DependentUpon>SociosHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\SociosNuevo.resx">
+      <DependentUpon>SociosNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\UsuarioEditar.resx">
+      <DependentUpon>UsuarioEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\UsuariosHome.resx">
+      <DependentUpon>UsuariosHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\UsuariosNuevo.resx">
+      <DependentUpon>UsuariosNuevo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SistemaAdmGym_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\SAG.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\SAG_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>SAG.mdf</DependentUpon>
+    </Content>
+    <Content Include="logosag.ico" />
+    <None Include="Resources\senales %281%29.png" />
+    <None Include="Resources\interfaz.png" />
+    <None Include="Resources\senales.png" />
+    <None Include="Resources\interfaz %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
